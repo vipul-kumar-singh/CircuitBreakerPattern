@@ -1,0 +1,47 @@
+{
+	"info": {
+		"_postman_id": "c6098532-9db8-4b19-8905-9c399746daa5",
+		"name": "Circuit Breaker",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Book Show WIth Hystrix Enabled",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/booking/bookNow",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"booking",
+						"bookNow"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Book Show WIthout Hystrix Enabled",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/booking/bookNowWithoutHystrix",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"booking",
+						"bookNowWithoutHystrix"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
